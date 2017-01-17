@@ -1,0 +1,7 @@
+select disk 1
+online disk noerr
+attributes disk clear readonly noerr
+create partition primary
+select volume 2
+format fs=NTFS label="data_disk" quick noerr
+assign noerr
